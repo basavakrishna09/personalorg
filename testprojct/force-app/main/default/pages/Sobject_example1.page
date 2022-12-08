@@ -1,0 +1,18 @@
+<apex:page controller="Sobject_example1" >
+    <apex:form >
+      <apex:pageBlock title="opportunity">
+          <apex:pageBlockSection title="opportunity" collapsible="false">
+              <apex:inputField value="{!opty.Name}"/>
+              <apex:inputField value="{!opty.stageName}"/>
+              <apex:inputField value="{!opty.closedate}"/>
+              <apex:inputField value="{!opty.Amount}"/>  
+          </apex:pageBlockSection>
+          <apex:pageBlockSection title="lead" collapsible="false">
+              <apex:inputField value="{!mylead.LastName}"/>
+              <apex:inputField Value="{!mylead.FirstName}"/>
+              <apex:inputField Value="{!mylead.phone}"/>
+              <apex:inputField Value="{!mylead.Email}"/>
+          </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
